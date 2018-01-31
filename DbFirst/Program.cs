@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace DbFirst
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Console.WriteLine("Hello");
+            var dbContext = new PlutoDbContext();
+            var courses = dbContext.GetCourses();
+            foreach (var c in courses)
+            {
+                Console.WriteLine(c.Title);
+            }
+
+            Console.ReadKey();
         }
     }
 }
