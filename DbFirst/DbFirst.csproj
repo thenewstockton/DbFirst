@@ -104,10 +104,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PlutoModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Db-First-Exercises.pdf" />
     <None Include="packages.config" />
     <None Include="PlutoModel.edmx.diagram">
       <DependentUpon>PlutoModel.edmx</DependentUpon>
     </None>
+    <None Include="Section-3-Exercise-Files.zip" />
+    <None Include="Section-3-Solution.zip" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PlutoModel.Context.tt">
