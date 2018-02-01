@@ -11,13 +11,13 @@ namespace DbFirst
 {
     using System;
     
-    public partial class GetCourses_Result
+    public partial class GetCoursesResult
     {
         public int CourseID { get; set; }
         public int AuthorID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public short FullPrice { get; set; }
-        public string Level { get; set; }
+        public DbFirst.Level Level { get; set; }
     }
 }

@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace DbFirst
 {
+    public enum Level : byte
+    {
+        Beginner = 1,
+        Intermediate = 2,
+        Advanced = 3
+    }
     public class Program
     {
         public static void Main(string[] args)
@@ -18,7 +24,14 @@ namespace DbFirst
                 Console.WriteLine(c.Title);
             }
 
+            var authorCourses = dbContext.GetAuthorCourses(1);
+
+            var course = new Course();
+            //course.Level = CourseLevel.Beginner;
+
             Console.ReadKey();
         }
     }
+
+
 }
